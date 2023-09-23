@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1071908732810",
+    "project_id": "naviostest",
+    "storage_bucket": "naviostest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071908732810:android:5a15baf2c69ba7fd241273",
+        "android_client_info": {
+          "package_name": "com.example.navios_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHyl01z-1LVJN2XBQPhin91GciH1gWdxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
