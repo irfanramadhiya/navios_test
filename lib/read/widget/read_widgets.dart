@@ -6,8 +6,16 @@ Widget readTitle() {
 }
 
 Widget buildContact(Contact contact) {
-  return Column(
-    children: [Text(contact.name), Text(contact.email), Text(contact.phone)],
+  return Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Text("Contact Details"),
+        Text("Name: ${contact.name}"),
+        Text("Email: ${contact.email}"),
+        Text("Phone Number:${contact.phone}")
+      ],
+    ),
   );
 }
 

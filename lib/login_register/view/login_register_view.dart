@@ -24,7 +24,7 @@ class LoginRegisterView extends StatelessWidget {
           children: [
             emailField("email", vm),
             passField("password", vm),
-            errorMessage(vm),
+            loginRegisterErrorMessage(vm),
             loginRegisterSubmitButton(vm),
             loginOrRegisterButton(vm),
           ],

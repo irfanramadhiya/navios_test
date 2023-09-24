@@ -33,5 +33,9 @@ Widget deleteButton(BuildContext context, HomeViewModel vm) {
 }
 
 Widget signOutButton(HomeViewModel vm) {
-  return ElevatedButton(onPressed: vm.signOut, child: const Text("Sign Out"));
+  return ElevatedButton(
+    onPressed: vm.signOut,
+    child: const Text("Sign Out"),
+    style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+  );
 }

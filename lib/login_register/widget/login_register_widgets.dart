@@ -26,8 +26,11 @@ Widget passField(String title, LoginRegisterViewModel vm) {
   );
 }
 
-Widget errorMessage(LoginRegisterViewModel vm) {
-  return Text(vm.errorMessage == "" ? "" : "Humm ? ${vm.errorMessage}");
+Widget loginRegisterErrorMessage(LoginRegisterViewModel vm) {
+  return Text(
+    vm.errorMessage == "" ? "" : "Humm ? ${vm.errorMessage}",
+    style: const TextStyle(color: Colors.red),
+  );
 }
 
 Widget loginRegisterSubmitButton(LoginRegisterViewModel vm) {

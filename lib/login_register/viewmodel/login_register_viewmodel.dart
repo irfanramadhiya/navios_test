@@ -5,7 +5,7 @@ import 'package:navios_test/auth.dart';
 class LoginRegisterViewModel extends ChangeNotifier {
   String? errorMessage = "";
   bool isLogin = true;
-  bool isHidden = false;
+  bool isHidden = true;
 
   final TextEditingController controllerEmail = TextEditingController();
   final TextEditingController controllerPassword = TextEditingController();

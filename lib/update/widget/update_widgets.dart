@@ -5,10 +5,34 @@ Widget updateTitle() {
   return const Text("Create");
 }
 
-Widget updateEntryField(String title, TextEditingController controller) {
+Widget updateNameEntryField(TextEditingController controller) {
   return TextField(
     controller: controller,
-    decoration: InputDecoration(labelText: title),
+    decoration: const InputDecoration(labelText: "name"),
+    keyboardType: TextInputType.name,
+  );
+}
+
+Widget updateEmailEntryField(TextEditingController controller) {
+  return TextField(
+    controller: controller,
+    decoration: const InputDecoration(labelText: "email"),
+    keyboardType: TextInputType.emailAddress,
+  );
+}
+
+Widget updatePhoneEntryField(TextEditingController controller) {
+  return TextField(
+    controller: controller,
+    decoration: const InputDecoration(labelText: "phone"),
+    keyboardType: TextInputType.phone,
+  );
+}
+
+Widget updateErrorMessage(UpdateViewModel vm) {
+  return Text(
+    vm.errorMessage == "" ? "" : "Humm ? ${vm.errorMessage}",
+    style: const TextStyle(color: Colors.red),
   );
 }
 

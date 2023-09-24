@@ -25,14 +25,12 @@ class ReadView extends StatelessWidget {
                 final contact = snapshot.data;
 
                 return contact == null
-                    ? Center(
+                    ? const Center(
                         child: Text('No data yet'),
                       )
                     : buildContact(contact);
               } else {
-                return Center(
-                  child: CircularProgressIndicator(),
-                );
+                return const Center(child: Text('No data yet'));
               }
             }));
   }
